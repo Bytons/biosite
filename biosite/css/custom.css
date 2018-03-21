@@ -150,6 +150,29 @@ a:focus {
    box-shadow: 0 0 10px #ccc; 
 }
 
+.fade-out {
+  -webkit-transition:opacity .5s ease-out;
+  -moz-transition:opacity .5s ease-out;
+  -ms-transition:opacity .5s ease-out;
+  -o-transition:opacity .5s ease-out;
+  transition:opacity .5s ease-out;
+}
+
+.fade-out:hover {
+  opacity:0.2;
+}
+
+.list-group-item:hover {
+	 -webkit-transition:opacity .5s ease-out;
+  -moz-transition:opacity .5s ease-out;
+  -ms-transition:opacity .5s ease-out;
+  -o-transition:opacity .5s ease-out;
+  transition:opacity .5s ease-out;
+	opacity:0.8;
+}
+
+.highlighted {
+    background-color: rgba(0,0,0,.5);
 }
 
 @media(min-width:768px) {
@@ -291,22 +314,22 @@ a:focus {
  padding-top:100px;
 }
 
+.contentContainer {
+	margin-top:20px;
+	margin-bottom:20px;
+	
+}
+
+#techstack {
+background-color:#F7F7F7;
+}
+
 #contact {
    
     background: url(../img/silta.jpg) no-repeat center center scroll;
     color:#fff;
      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-}
-.palkkaus-section {
-    width: 100%;
-    color: #000;
-    background: url(../img/.jpg) no-repeat center center scroll;
-    background-color: ##F7F7F7;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 
@@ -320,14 +343,8 @@ a:focus {
 @media(min-width:767px) {
     .content-section {
         padding-top: 100px;
-        padding-bottom:450px;
-    }
-
-    .palkkaus-section {
-        padding: 100px 0;
-    }
-
-  
+        padding-bottom:100px;
+    }  
     
 }
 
